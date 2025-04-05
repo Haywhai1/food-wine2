@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply py-1 px-6 rounded-full text-white bg-orange-300;
+  }
+}
