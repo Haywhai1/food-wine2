@@ -9,7 +9,7 @@ const Hero = () => {
         alt="/"
       />
       <div className="w-full absolute top-0 h-full flex flex-col text-white">
-        <div className="m-10 ml-2 mr-2 md:m-20 justify-between flex border rounded-full ">
+        <div className="m-10 ml-2 mr-2 md:m-20 items-center justify-between flex border rounded-full ">
           <h1 className='ml-4'>FOOD&WINE</h1>
           <ul className="hidden md:flex md:gap-10">
             <li>Home</li>
