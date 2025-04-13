@@ -4,6 +4,20 @@
 
 @layer base {
   button {
-    @apply py-1 px-6 rounded-full text-white bg-orange-300;
+    @apply py-2 px-6 rounded-full text-white bg-[#ff8f08];
+  }
+  h1{
+    font-weight: 700;
+  }
+  p, ul{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: normal;
+  }
+  ul{
+    font-size: 16px;
+  }
+  button{
+    font-weight: 500;
   }
 }
