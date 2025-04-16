@@ -11,8 +11,20 @@ const About = () => {
         />
       </div>
 
-      <div className=" flex flex-col justify-center ">
-        <h3 className="text-3xl md:text-4xl font-bold">About Food and Wine</h3>
+      <div
+        className=" flex flex-col justify-center "
+        style={{ fontFamily: '"Poppins", sans-serif' }}
+      >
+        <h1
+          className="text-4xl md:text-5xl"
+          style={{
+            fontFamily: '"Darker Grotesque", sans-serif',
+            fontWeight: 700,
+          }}
+        >
+          About Food and Wine
+        </h1>
+
         <p className="pt-2 text-xl">
           At Food and Wine, we believe the best dishes are the ones that remind
           you of childhood.

@@ -7,10 +7,24 @@ const DietFeeding = () => {
       style={{ backgroundImage: "url('images/dietFeeding-img.png')" }}
     >
       {/* Content Div on the Right */}
-      <div className=" flex justify-center sm:justify-start w-full">
+      <div className=" flex justify-center sm:justify-start w-full" style={{ fontFamily: '"Inter", sans-serif' }}>
         <div className="flex justify-center flex-col  text-white">
-          <h3 className="text-3xl md:text-4xl ">Feed Your Diets,</h3>
-          <h3 className="text-3xl md:text-4xl ">Save Your Wallet!</h3>
+          <h3 className="text-3xl md:text-4xl "
+          style={{
+            fontFamily: '"Darker Grotesque", sans-serif',
+            fontWeight: 700,
+          }}
+          >
+            Feed Your Diets,
+          </h3>
+          <h3 className="text-3xl md:text-4xl "
+          style={{
+            fontFamily: '"Darker Grotesque", sans-serif',
+            fontWeight: 700,
+          }}
+          >
+            Save Your Wallet!
+          </h3>
           <p className="text-lg md:text-xl ">
           Enjoy the flavor you love without the guilt of overspending.
           </p>

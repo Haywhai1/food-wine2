@@ -2,7 +2,10 @@ import React from "react";
 
 const GetReady = () => {
   return (
-    <div className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 md:p-20">
+    <div 
+    className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 md:p-20"
+    style={{ fontFamily: '"Inter", sans-serif' }}
+    >
        {/* Div 2 - Image */}
        <div className="flex items-center justify-center h-full md:hidden">
         <img
@@ -13,7 +16,14 @@ const GetReady = () => {
       </div>
       {/* Div 1 - Text */}
       <div className="flex flex-col  justify-center md:p-8 md:pl-0  gap-2   ">
-        <h3 className="text-4xl">Get Ready To Book a Seat For Your Comfort</h3>
+        <h3 className="text-4xl"
+        style={{
+          fontFamily: '"Darker Grotesque", sans-serif',
+          fontWeight: 700,
+        }}
+        >
+        Get Ready To Book a Seat For Your Comfort
+        </h3>
         <p className="text-xl">
           Planning a romantic evening, a catch-up with friends or just craving
           something special? Your perfect table is just a few clicks away.
@@ -49,7 +59,14 @@ const GetReady = () => {
 
       {/* Div 4 - Text */}
       <div className="flex flex-col  justify-center md:p-4 md:pr-0 gap-2 h-full ">
-        <h3 className="text-4xl">Your Spot at the Bar Awaits</h3>
+        <h3 className="text-4xl"
+        style={{
+          fontFamily: '"Darker Grotesque", sans-serif',
+          fontWeight: 700,
+        }}
+        >
+          Your Spot at the Bar Awaits
+        </h3>
         <p className="text-xl">
           Mixing Traditions, Creating Tastes and flavors without borders.
         </p>
