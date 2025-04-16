@@ -3,7 +3,7 @@ import React from "react";
 const HowToOrder = () => {
   return (
     <>
-      <div className="md:pt-10 max-w-7xl min-h-screen items-center justify-center">
+      <div className="md:pt-10 pt-5 max-w-7xl min-h-screen items-center justify-center">
         <div className="w-full">
           <h3 className="text-3xl md:text-4xl text-center font-semibold">
             How To Order
