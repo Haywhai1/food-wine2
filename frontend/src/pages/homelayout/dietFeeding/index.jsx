@@ -3,8 +3,8 @@ import React from "react";
 const DietFeeding = () => {
   return (
     <div
-      className="w-full h-[45vh] md:h-[60vh] flex bg-cover bg-center p-10"
-      style={{ backgroundImage: "url('images/healthyChoice.png')" }}
+      className="w-full h-[45vh] md:h-[60vh] flex bg-cover bg-center p-5 md:p-20"
+      style={{ backgroundImage: "url('images/dietFeeding-img.png')" }}
     >
       {/* Content Div on the Right */}
       <div className=" flex justify-center sm:justify-start w-full">

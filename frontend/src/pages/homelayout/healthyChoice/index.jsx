@@ -3,7 +3,7 @@ import React from "react";
 const HealthyChoice = () => {
   return (
     <div
-      className="w-full h-[45vh] md:h-[60vh] flex bg-cover bg-center px-10"
+      className="w-full h-[45vh] md:h-[60vh] flex bg-cover bg-center px-5 md:px-20"
       style={{ backgroundImage: "url('images/healthyChoice.png')" }}
     >
       {/* Content Div on the Right */}

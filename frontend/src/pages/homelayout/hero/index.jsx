@@ -8,7 +8,7 @@ const Hero = () => {
         src="images/hero-img.png"
         alt="/"
       />
-      <div className="w-full absolute top-0 h-full flex flex-col text-white">
+      <div className="w-full absolute top-0 h-full flex flex-col text-white ">
         <div className="m-10 ml-4 mr-4 md:m-16 items-center justify-between flex border-[0.8px] rounded-full ">
           <h1 className='ml-4' style={{ fontFamily: "MuseoModerno sans-serif", fontWeight: 700}}>FOOD&WINE</h1>
           <ul className="hidden md:flex md:gap-10" style={{ fontFamily: "Inter, sans-serif"}}>

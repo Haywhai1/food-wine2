@@ -2,13 +2,13 @@ import React from "react";
 
 const GetReady = () => {
   return (
-    <div className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 p-10 ">
+    <div className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 md:p-20">
        {/* Div 2 - Image */}
        <div className="flex items-center justify-center h-full md:hidden">
         <img
           src="images/getReady-img.png"
           alt="Image 1"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
         />
       </div>
       {/* Div 1 - Text */}
@@ -34,7 +34,7 @@ const GetReady = () => {
         <img
           src="images/getReady-img.png"
           alt="Image 1"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
 
@@ -43,7 +43,7 @@ const GetReady = () => {
         <img
           src="images/getReady-img2.png"
           alt="Image 2"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
 
