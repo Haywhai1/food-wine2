@@ -5,7 +5,7 @@ import GetReady from './getReady'
 import DietFeeding from './dietFeeding'
 import HowToOrder from './howToOrder'
 import HealthyChoice from './healthyChoice'
-import Footer from '../../shared/footer'
+import Footer from '../../components/footer'
 import PopularDishes from './popularDishes'
 import CustomerReview from './ourReview'
 
