@@ -6,8 +6,9 @@ import DietFeeding from './dietFeeding'
 import HowToOrder from './howToOrder'
 import HealthyChoice from './healthyChoice'
 import Footer from '../../shared/footer'
-import CustomerReview from './CustomerReview'
 import PopularDishes from './popularDishes'
+import CustomerReview from './ourReview'
+
 
 const Home = () => {
   return (
