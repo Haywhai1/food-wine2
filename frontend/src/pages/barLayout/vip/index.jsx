@@ -17,7 +17,7 @@ const Vip = () => {
         <button className="self-start">Book Now</button>
       </div>
 
-      <div className="grid grid-cols-2 h-[50vh] md:h-[70vh] gap-2">
+      <div className="grid grid-cols-2 h-[45vh] md:h-[70vh] gap-2">
         <div className="row-span-4 col-span-1 md:row-span-6 rounded-lg overflow-hidden">
           <img
             className="object-cover w-full h-full"
