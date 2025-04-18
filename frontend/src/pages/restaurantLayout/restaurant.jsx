@@ -64,9 +64,9 @@ const Restaurant = () => {
                 <img
                   src={menuItem.image}
                   alt={menuItem.name}
-                  className="w-full md:h-56 h-80 sm:h-56 object-cover"
+                  className="w-full md:h-52 h-80 sm:h-56 object-cover"
                 />
-                <div className="p-4 flex flex-col space-y-2">
+                <div className="p-2 pb-3 flex flex-col space-y-1">
                   <h3 className="text-xl md:text-sm sm:text-base font-bold text-black text-center">
                     {menuItem.name}
                   </h3>
@@ -96,7 +96,7 @@ const Restaurant = () => {
                     </p>
                   </div>
 
-                  <button className="px-8 py-1 bg-[#ff8f08] text-white text-lg rounded-full flex items-center justify-center gap-2">
+                  <button className="px-8 py-0 bg-[#ff8f08] text-white text-lg rounded-full flex items-center justify-center gap-2">
                     Order Now <FaShoppingCart className="text-white text-xl" />
                   </button>
                 </div>
