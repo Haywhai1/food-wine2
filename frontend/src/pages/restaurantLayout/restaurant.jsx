@@ -64,7 +64,7 @@ const Restaurant = () => {
                 <img
                   src={menuItem.image}
                   alt={menuItem.name}
-                  className="w-full md:h-52 h-80 sm:h-56 object-cover"
+                  className="w-full md:h-40 h-56 sm:h-56 object-cover"
                 />
                 <div className="p-2 pb-3 flex flex-col space-y-1">
                   <h3 className="text-xl md:text-sm sm:text-base font-bold text-black text-center">

@@ -1,5 +1,9 @@
 import React from 'react'
 import Hero from '../homelayout/hero'
+import VIP from './vip'
+import Vip from './vip'
+import Sky from './sky'
+import Exclusive from './exclusive'
 
 const Bar = () => {
   return (
@@ -11,6 +15,9 @@ const Bar = () => {
         showOrderButton={false}
         fullHeight={false} 
       />
+      <Vip/>
+      <Sky/>
+      <Exclusive/>
     </div>
   )
 }
