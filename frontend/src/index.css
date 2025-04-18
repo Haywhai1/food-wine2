@@ -8,6 +8,9 @@
   button {
     @apply py-2 px-6 rounded-full text-white bg-[#ff8f08];
   }
+  .button2 {
+    @apply text-white bg-transparent hover:bg-transparent border-none;
+  }
   h1, h3{
     font-weight: 700;
   }

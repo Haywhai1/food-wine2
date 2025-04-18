@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const GetReady = () => {
+  const navigate = useNavigate();
   return (
     <div 
     className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 md:p-20"
@@ -36,7 +38,12 @@ const GetReady = () => {
           Book ahead to skip the wait and savor the moment from the very first
           bite.
         </p>
-        <button className="self-start">BOOK NOW</button>
+        <button 
+        className="self-start"
+        onClick={() => navigate("/restaurant")}
+        >
+          BOOK NOW
+        </button>
       </div>
 
        {/* Div 2 - Image */}
@@ -80,7 +87,12 @@ const GetReady = () => {
           Reserve your spot and slide into a scene of curated music, creative
           mixology, and great conversations.
         </p>
-        <button className="self-start">BOOK NOW</button>
+        <button 
+        className="self-start"
+        onClick={() => navigate("/bar")}
+        >
+          BOOK NOW
+        </button>
       </div>
     </div>
   );
