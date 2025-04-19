@@ -1,26 +1,37 @@
+// App.jsx
+
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./shared/scrollToTop";
+
 import HomeLayout from "./pages/homelayout";
 import Home from "./pages/homelayout/home";
+
 import RestaurantLayout from "./pages/restaurantLayout";
 import Restaurant from "./pages/restaurantLayout/restaurant";
+
 import BarLayout from "./pages/barLayout";
 import Bar from "./pages/barLayout/bar";
+
 function App() {
-  return(
-    <Routes>
-      <Route path="/" element={<HomeLayout/>}>
-         <Route index element={<Home/>} />
-      </Route>
+  return (
+    <>
+      <ScrollToTop />
 
-      <Route path="/restaurant" element={<RestaurantLayout/>}>
-         <Route index element={<Restaurant/>} />
-      </Route>
+      <Routes>
+        <Route path="/" element={<HomeLayout />}>
+          <Route index element={<Home />} />
+        </Route>
 
-      <Route path="/bar" element={<BarLayout/>}>
-         <Route index element={<Bar/>} />
-      </Route>
-    </Routes>
+        <Route path="/restaurant" element={<RestaurantLayout />}>
+          <Route index element={<Restaurant />} />
+        </Route>
+
+        <Route path="/bar" element={<BarLayout />}>
+          <Route index element={<Bar />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
-export default App
+export default App;
