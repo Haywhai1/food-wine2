@@ -6,7 +6,7 @@ const Hero = ({
   heading = "We Love To Serve The Taste You Love",
   subheading = "From gourmet plates to craft cocktails, we serve up the perfect mix of bold taste and good vibes.",
   showOrderButton = true,
-  backgroundImage = "images/hero-img.png", 
+  backgroundImage = "images/hero-img.png",
   fullHeight = true,
 }) => {
   const location = useLocation();
@@ -37,22 +37,23 @@ const Hero = ({
   }, []);
 
   return (
-    <div
-      className={`w-full ${fullHeight ? "h-screen" : "min-h-[46vh] md:min-h-[52vh]"} relative`}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed", // Ensures a parallax effect on scroll
-      }}
-    >
-      <div className="w-full h-full absolute top-0 left-0 flex flex-col text-white bg-black bg-opacity-40">
-        <div className="m-10 ml-5 mr-5 items-center justify-between flex border-[0.8px] rounded-full">
-          <h1 className="ml-4" style={{ fontFamily: '"MuseoModerno", sans-serif' }}>
+    <div className={`w-full ${fullHeight ? "h-screen" : "min-h-[46vh] md:min-h-[52vh]"} relative`}>
+      <img
+        className="absolute top-0 left-0 h-full w-full object-cover"
+        src={backgroundImage}
+        alt="hero background"
+      />
+
+      <div className="w-full absolute top-0 h-full flex flex-col text-white">
+        <div className="m-10 ml-5 mr-5  items-center justify-between flex border-[0.8px] rounded-full">
+          <h1
+            className="ml-4"
+            style={{ fontFamily: '"MuseoModerno",sans-serif' }}
+          >
             FOOD&WINE
           </h1>
 
-          <ul className="hidden md:flex" style={{ fontFamily: '"Inter", sans-serif' }}>
+          <ul className="hidden md:flex " style={{ fontFamily: '"Inter", sans-serif' }}>
             <li>
               <button
                 onClick={() => navigate("/")}
@@ -75,6 +76,7 @@ const Hero = ({
                       ? "#FF8F08"
                       : "#fff",
                 }}
+                
                 className="button2 hover:text-orange-400 transition duration-200"
               >
                 Menu
@@ -126,13 +128,17 @@ const Hero = ({
             </li>
           </ul>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 ">
             <FaShoppingCart className="text-white text-xl cursor-pointer hover:text-[#ff8f08] transition-colors duration-300" />
             <button>Book Now</button>
           </div>
         </div>
 
-        <div className={`text-center p-6 ${currentPath === "/" ? "mt-18 md:mt-12" : "mt-0 md:mt-0"}`}>
+        <div
+  className={`text-center p-6 ${
+    currentPath === "/" ? "mt-18 md:mt-12" : "mt-0 md:mt-0"
+  }`}
+>
           <h1
             className="text-4xl py-2 md:text-7xl leading-9 md:leading-16"
             style={{ fontFamily: '"Darker Grotesque", sans-serif' }}
