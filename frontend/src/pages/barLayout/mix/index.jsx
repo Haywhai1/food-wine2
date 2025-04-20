@@ -42,14 +42,14 @@ const Mix = () => {
   
 
   return (
-    <div className="p-5 md:p-20 md:py-15 md:text-center">
+    <div className="p-5 md:p-20  md:py-10 md:text-center">
       <h3 className="text-2xl sm:text-3xl md:text-4xl">Meet Our Mixologists</h3>
       <p>
         Meet the creative minds behind the bar and crafting cocktails that
         elevate every sip.
       </p>
 
-      <div className="mt-5 md:mt-10">
+      <div className="mt-5 ">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={16}
@@ -85,7 +85,7 @@ const Mix = () => {
           {items.map((item, index) => (
             <SwiperSlide key={index}>
             <div
-              className="relative w-full h-72 rounded-lg overflow-hidden bg-cover bg-center"
+              className="relative w-full h-96 rounded-lg overflow-hidden bg-cover bg-center"
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
               <div className="absolute bottom-0 left-0 w-full bg-black/70 text-white p-4">
