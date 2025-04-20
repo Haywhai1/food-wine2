@@ -4,6 +4,7 @@ import Vip from './vip'
 import Sky from './sky'
 import Exclusive from './exclusive'
 import Dj from './dj'
+import Mix from './mix'
 
 const Bar = () => {
   return (
@@ -19,6 +20,7 @@ const Bar = () => {
       <Sky/>
       <Exclusive/>
       <Dj/>
+      <Mix/>
     </div>
   )
 }
