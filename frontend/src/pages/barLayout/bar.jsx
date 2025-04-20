@@ -3,6 +3,7 @@ import Hero from '../homelayout/hero'
 import Vip from './vip'
 import Sky from './sky'
 import Exclusive from './exclusive'
+import Dj from './dj'
 
 const Bar = () => {
   return (
@@ -17,6 +18,7 @@ const Bar = () => {
       <Vip/>
       <Sky/>
       <Exclusive/>
+      <Dj/>
     </div>
   )
 }
