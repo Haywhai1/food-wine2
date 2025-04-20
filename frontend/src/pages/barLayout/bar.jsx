@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../homelayout/hero'
-import VIP from './vip'
 import Vip from './vip'
 import Sky from './sky'
 import Exclusive from './exclusive'
