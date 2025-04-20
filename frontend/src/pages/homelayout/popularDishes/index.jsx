@@ -142,7 +142,7 @@ const PopularDishes = () => {
             {menu.slice(0, 4).map((_, index) => (
               <span
                 key={index}
-                className={`w-5 h-5 rounded-full mx-1 transition-all duration-300 ${
+                className={`w-4 h-4 rounded-full mx-1 transition-all duration-300 ${
                   index === activeIndex ? "bg-[#ff8f08]" : "bg-gray-400"
                 }`}
               ></span>
