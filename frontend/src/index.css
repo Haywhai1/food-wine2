@@ -11,10 +11,15 @@
   .button2 {
     @apply text-white bg-transparent hover:bg-transparent border-none;
   }
+  
+  body{
+    overflow-x: hidden;
+  }
+
   h1, h3{
     font-weight: 700;
   }
-  
+
   p, ul, li{
      font-weight: 400;
      font-size: 20px;
