@@ -45,7 +45,7 @@ const Hero = ({
       />
 
       <div className="w-full absolute top-0 h-full flex flex-col text-white">
-        <div className="m-10 ml-5 mr-5  items-center justify-between flex border-[0.8px] rounded-full">
+        <div className="m-10 mt-15 ml-5 mr-5 md:mr-20 md:ml-20 items-center justify-between flex border-[0.8px] rounded-full">
           <h1
             className="ml-4"
             style={{ fontFamily: '"MuseoModerno",sans-serif' }}
@@ -140,7 +140,7 @@ const Hero = ({
   }`}
 >
           <h1
-            className="text-5xl pb-4 md:text-7xl leading-9 md:leading-16"
+            className="text-4xl font-bold pb-4 md:text-7xl leading-9 md:leading-16"
             style={{ fontFamily: '"Darker Grotesque", sans-serif' }}
           >
             {heading}

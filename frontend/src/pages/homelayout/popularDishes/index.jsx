@@ -38,7 +38,7 @@ const PopularDishes = () => {
         behavior: "smooth",
       });
       setActiveIndex(nextIndex);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [activeIndex, menu]);
