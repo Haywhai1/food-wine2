@@ -140,7 +140,7 @@ const Hero = ({
   }`}
 >
           <h1
-            className="text-6xl pb-4 md:text-7xl leading-9 md:leading-16"
+            className="text-5xl pb-4 md:text-7xl leading-9 md:leading-16"
             style={{ fontFamily: '"Darker Grotesque", sans-serif' }}
           >
             {heading}
