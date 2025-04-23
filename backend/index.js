@@ -15,7 +15,7 @@ app.use("/api/v1/menu", menuRoute);
  
 
 
-app.get("/", (req, res) => {
+app.get("/ping", (req, res) => {
     res.send("FOOD&WINE2!!!");
 });
 
