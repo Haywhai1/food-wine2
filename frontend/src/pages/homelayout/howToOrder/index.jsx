@@ -3,21 +3,10 @@ import React from "react";
 const HowToOrder = () => {
   return (
     <>
-      <div className="md:pt-10 pt-5 max-w-7xl min-h-screen items-center justify-center">
+      <div className=" pt-5 max-w-7xl min-h-screen items-center justify-center">
         <div className="w-full">
-          <h3
-            className="text-3xl md:text-4xl text-center font-semibold"
-            style={{
-              fontFamily: '"Darker Grotesque", sans-serif',
-              fontWeight: 700,
-            }}
-          >
-            How To Order
-          </h3>
-          <p
-            className="text-lg md:text-xl text-center text-gray-600  "
-            style={{ fontFamily: '"Inter", sans-serif' }}
-          >
+          <h3 className="text-center">How To Order</h3>
+          <p className="text-center">
             Simplified way to order online or in-person.
           </p>
         </div>
@@ -42,22 +31,11 @@ const HowToOrder = () => {
                 className="w-6 h-6 mt-1"
               />
               <div>
-                <h4
-                  className="text-base md:text-lg font-semibold"
-                  style={{
-                    fontFamily: '"Darker Grotesque", sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
-                  Select A Dish
-                </h4>
-                <p
-                  className="text-sm md:text-base text-gray-700"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
+                <h4>Select A Dish</h4>
+                <span >
                   Take your time to explore our variety of options and select
                   the ones that sound most appealing to you.
-                </p>
+                </span>
               </div>
             </div>
 
@@ -69,22 +47,11 @@ const HowToOrder = () => {
                 className="w-6 h-6 mt-1"
               />
               <div>
-                <h4
-                  className="text-base md:text-lg font-semibold"
-                  style={{
-                    fontFamily: '"Darker Grotesque", sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
-                  Confirm Order
-                </h4>
-                <p
-                  className="text-sm md:text-base text-gray-700"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
+                <h4>Confirm Order</h4>
+                <span>
                   Review your selection and confirm your order details to ensure
                   everything is correct.
-                </p>
+                </span>
               </div>
             </div>
 
@@ -96,23 +63,12 @@ const HowToOrder = () => {
                 className="w-6 h-6 mt-1"
               />
               <div>
-                <h4
-                  className="text-base md:text-lg font-semibold"
-                  style={{
-                    fontFamily: '"Darker Grotesque", sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
-                  Make Payment
-                </h4>
-                <p
-                  className="text-sm md:text-base text-gray-700"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
+                <h4>Make Payment</h4>
+                <span >
                   Enter your payment information and complete your order
                   securely. We use a secure payment system to protect your
                   financial information.
-                </p>
+                </span>
               </div>
             </div>
 
@@ -124,23 +80,12 @@ const HowToOrder = () => {
                 className="w-6 h-6 mt-1"
               />
               <div>
-                <h4
-                  className="text-base md:text-lg font-semibold"
-                  style={{
-                    fontFamily: '"Darker Grotesque", sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
-                  Wait for Delivery
-                </h4>
-                <p
-                  className="text-sm md:text-base text-gray-700"
-                  style={{ fontFamily: '"Inter", sans-serif' }}
-                >
+                <h4>Wait for Delivery</h4>
+                <span >
                   Relax and wait for your food to arrive. Our delivery team will
                   bring your order to you hot and fresh, so you can enjoy it at
                   your convenience.
-                </p>
+                </span>
               </div>
             </div>
           </div>

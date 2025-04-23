@@ -60,19 +60,8 @@ const PopularDishes = () => {
 
   return (
     <div className="bg-[#4d2c04] text-white md:text-center p-5 pb-10 md:pb-0 w-full">
-      <h1
-        className="text-4xl md:text-5xl mb-2"
-        style={{
-          fontFamily: '"Darker Grotesque", sans-serif',
-          fontWeight: 700,
-        }}
-      >
-        Our Popular Dishes
-      </h1>
-      <p
-        className="text-xl md:px-2"
-        style={{ fontFamily: '"Inter", sans-serif' }}
-      >
+      <h3>Our Popular Dishes</h3>
+      <p className="md:px-2">
         These are the crowd-pleasers, our signature dishes that keep guests
         coming back for more.
       </p>
@@ -103,9 +92,9 @@ const PopularDishes = () => {
                     className="w-full md:h-52 h-80 sm:h-56 object-cover"
                   />
                   <div className="p-2 pb-3 flex flex-col space-y-1">
-                    <h3 className="text-xl md:text-sm sm:text-base font-bold text-black text-center">
+                    <h1 className="text-xl md:text-sm sm:text-base font-bold text-black text-center">
                       {menuItem.name}
-                    </h3>
+                    </h1>
                     <div className="flex justify-between items-center text-black">
                       <div className="flex items-center px-2">
                         {[...Array(5)].map((_, i) => (
@@ -124,12 +113,13 @@ const PopularDishes = () => {
                           {menuItem.rating}
                         </span>
                       </div>
-                      <p className="text-sm font-semibold text-[#ff8f08] px-2">
+                      <span className="text-[#ff8f08] px-3">
                         {`#${menuItem.price}`}
-                      </p>
+                      </span>
                     </div>
                     <button className="px-8 py-2 bg-[#ff8f08] text-white text-lg rounded-full flex items-center justify-center gap-2">
-                      Order Now <FaShoppingCart className="text-white text-xl" />
+                      Order Now{" "}
+                      <FaShoppingCart className="text-white text-xl" />
                     </button>
                   </div>
                 </li>

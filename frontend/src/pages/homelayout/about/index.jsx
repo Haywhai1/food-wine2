@@ -15,15 +15,11 @@ const About = () => {
         className=" flex flex-col justify-center "
         style={{ fontFamily: '"Poppins", sans-serif' }}
       >
-        <h1
+        <h3
           className="text-4xl md:text-5xl"
-          style={{
-            fontFamily: '"Darker Grotesque", sans-serif',
-            fontWeight: 700,
-          }}
         >
           About Food and Wine
-        </h1>
+        </h3>
 
         <p className="pt-2 text-xl">
           At Food and Wine, we believe the best dishes are the ones that remind

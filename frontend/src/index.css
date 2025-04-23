@@ -12,8 +12,30 @@
   .button2 {
     @apply text-white bg-transparent hover:bg-transparent border-none;
   }
+
+  h3 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 700;
+    @apply  leading-none text-3xl md:text-5xl 2xl:text-6xl;
+  }
+  p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    @apply text-xl
+  }
+  span{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  h4{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
+    @apply font-bold text-xl md:text-2xl
+  }
 }
-  
+
   body{
     overflow-x: hidden;
   }
@@ -26,6 +48,11 @@
      font-weight: 400;
      font-size: 20px;
      line-height: normal;
+  }
+  span{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
   }
   ul{
     font-size: 16px;

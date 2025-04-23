@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const CustomerReview = () => {
   return (
-    <div className='p-5 md:p-20'>CustomerReview</div>
-  )
-}
+    <div className="p-5 md:p-20">
+      <h3 className="">Customers Review</h3>
+    </div>
+  );
+};
 
-export default CustomerReview
+export default CustomerReview;
