@@ -16,10 +16,10 @@ app.use("/api/v1/menu", menuRoute);
 
 
 app.get("/ping", (req, res) => {
-    console.log("ping received at", new Date().toISOString());
-    res.status(200).send("food&wine2!!")
-    
+  console.log(`[PING] ${new Date().toISOString()} from ${req.ip} - ${req.headers['user-agent']}`);
+  res.status(200).send("pong");
 });
+
 
 const start = async () => {
     try {
