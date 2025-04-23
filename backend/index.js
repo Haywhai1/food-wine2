@@ -16,7 +16,9 @@ app.use("/api/v1/menu", menuRoute);
 
 
 app.get("/ping", (req, res) => {
-    res.send("FOOD&WINE2!!!");
+    console.log("ping received at", new Date().toISOString());
+    res.status(200).send("food&wine2!!")
+    
 });
 
 const start = async () => {
