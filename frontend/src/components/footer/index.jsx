@@ -7,16 +7,14 @@ const AccordionItem = ({ title, children }) => {
 
   return (
     <div className="border-b border-gray-300 py-3">
-      <div className="flex justify-between w-full items-center">
-        <p
-          onClick={() => setOpen(!open)}
-          className="font-semibold cursor-pointer"
-        >
-          {title}
-        </p>
+      <div
+        onClick={() => setOpen(!open)}
+        className="flex justify-between items-center w-full cursor-pointer"
+      >
+        <p className="text-base"><b>{title}</b></p>
         <span>{open ? <FaChevronUp /> : <FaChevronDown />}</span>
       </div>
-      {open && <div className="mt-2 pl-2">{children}</div>}
+      {open && <div className="mt-4 pl-2">{children}</div>}
     </div>
   );
 };
@@ -52,9 +50,8 @@ const Footer = () => {
 
       {/* md and above layout */}
       <div className="p-5 py-10 md:p-15 hidden md:flex flex-wrap justify-between gap-4">
-        {/* Social Handles Section */}
         <div className="leading-8">
-          <p><b>Our Social Handles</b></p>
+          <p>Our Social Handles</p>
           <div className="flex space-x-4 mt-2">
             <div className="w-12 h-12 flex items-center justify-center bg-[#512D02] rounded-full">
               <FaTwitter className="text-white w-6 h-6" />
@@ -68,37 +65,34 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links Section */}
         <div className="leading-8">
           <p><b>Quick Links</b></p>
-          <span className="block cursor-pointer sm:hover:underline">Home</span>
-          <span className="block cursor-pointer sm:hover:underline">Menu</span>
-          <span className="block cursor-pointer sm:hover:underline">Location</span>
-          <span className="block cursor-pointer sm:hover:underline">Contact</span>
+          <span className="block cursor-pointer hover:underline">Home</span>
+          <span className="block cursor-pointer hover:underline">Menu</span>
+          <span className="block cursor-pointer hover:underline">Location</span>
+          <span className="block cursor-pointer hover:underline">Contact</span>
         </div>
 
-        {/* Company Section */}
         <div className="leading-8">
           <p><b>Company</b></p>
-          <span className="block cursor-pointer sm:hover:underline">FAQ’s</span>
-          <span className="block cursor-pointer sm:hover:underline">About us</span>
-          <span className="block cursor-pointer sm:hover:underline">Privacy & Policy</span>
-          <span className="block cursor-pointer sm:hover:underline">Terms & Conditions</span>
+          <span className="block cursor-pointer hover:underline">FAQ’s</span>
+          <span className="block cursor-pointer hover:underline">About us</span>
+          <span className="block cursor-pointer hover:underline">Privacy & Policy</span>
+          <span className="block cursor-pointer hover:underline">Terms & Conditions</span>
         </div>
 
-        {/* Contact Us Section */}
         <div className="leading-8">
           <p><b>Contact Us</b></p>
-          <span className="block cursor-pointer sm:hover:underline">3, Wuse Zone 2, Abuja, FCT.</span>
-          <span className="block cursor-pointer sm:hover:underline">+234-810000000</span>
-          <span className="block cursor-pointer sm:hover:underline">foodandwine@gmail.com</span>
+          <span className="block cursor-pointer hover:underline">3, Wuse Zone 2, Abuja, FCT.</span>
+          <span className="block cursor-pointer hover:underline">+234-810000000</span>
+          <span className="block cursor-pointer hover:underline">foodandwine@gmail.com</span>
         </div>
       </div>
 
       {/* Accordion for sm and smaller */}
-      <div className="block md:hidden p-5">
+      <div className="block md:hidden p-5 pb-10">
         <AccordionItem title="Our Social Handles">
-          <div className="flex space-x-4 mt-2">
+          <div className="flex space-x-8 mt-2">
             <div className="w-10 h-10 flex items-center justify-center bg-[#512D02] rounded-full">
               <FaTwitter className="text-white w-5 h-5" />
             </div>
@@ -112,7 +106,7 @@ const Footer = () => {
         </AccordionItem>
 
         <AccordionItem title="Quick Links">
-          <div className="space-y-1">
+          <div className="space-y-4">
             <p className="cursor-pointer">Home</p>
             <p className="cursor-pointer">Menu</p>
             <p className="cursor-pointer">Location</p>
@@ -121,7 +115,7 @@ const Footer = () => {
         </AccordionItem>
 
         <AccordionItem title="Company">
-          <div className="space-y-1">
+          <div className="space-y-4">
             <p className="cursor-pointer">FAQ’s</p>
             <p className="cursor-pointer">About us</p>
             <p className="cursor-pointer">Privacy & Policy</p>
@@ -130,7 +124,7 @@ const Footer = () => {
         </AccordionItem>
 
         <AccordionItem title="Contact Us">
-          <div className="space-y-1">
+          <div className="space-y-4">
             <p className="cursor-pointer">3, Wuse Zone 2, Abuja, FCT.</p>
             <p className="cursor-pointer">+234-810000000</p>
             <p className="cursor-pointer">foodandwine@gmail.com</p>
