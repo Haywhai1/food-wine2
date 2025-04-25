@@ -18,7 +18,7 @@ const Dj = () => {
 </p>
 
 {/* Full version: for ≥500px */}
-<p className="text-end leading-snug min-[500px]:block hidden mb-2">
+<p className="text-end leading-snug min-[500px]:block hidden py-2">
   Get ready for an unforgettable night as DJ Chicken <br />
   brings the heat with non-stop beats, good vibes <br />
   and the best party in town. Don’t miss it!

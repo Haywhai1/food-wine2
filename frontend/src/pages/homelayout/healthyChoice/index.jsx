@@ -3,44 +3,29 @@ import React from "react";
 const HealthyChoice = () => {
   return (
     <div
-      className="w-full h-[45vh] md:h-[60vh] flex bg-cover bg-center px-5 md:px-20"
-      style={{ backgroundImage: "url('images/healthyChoice.png')" }}
-    >
-      {/* Content Div on the Right */}
-      <div
-        className=" flex justify-center sm:justify-end w-full "
-        style={{ fontFamily: '"Inter", sans-serif' }}
-      >
-        <div className="flex justify-center flex-col  text-white">
-          <h3
-            className="text-3xl md:text-4xl sm:self-end"
-            style={{
-              fontFamily: '"Darker Grotesque", sans-serif',
-              fontWeight: 700,
-            }}
-          >
-            Healthy Choices,
-          </h3>
-          <h3
-            className="text-3xl md:text-4xl sm:self-end "
-            style={{
-              fontFamily: '"Darker Grotesque", sans-serif',
-              fontWeight: 700,
-            }}
-          >
-            Happy You!
-          </h3>
-          <p className="text-lg md:text-xl sm:self-end">
-            Learn how to balance your meals, stay hydrated,
-          </p>
-          <p className="text-lg md:text-xl sm:self-end">
-            {" "}
-            and make choices that fuel your lifestyle
-          </p>
-          <button className="mt-3 self-start sm:self-end">BOOK NOW</button>
-        </div>
-      </div>
-    </div>
+  className="p-5 py-10 md:p-20 flex flex-col items-end leading-none  text-white"
+  style={{
+    backgroundImage: "url('/images/healthyChoice.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <h3 className='text-end '>Healthy Choices,<br/>Happy You!</h3>
+{/* Short version: only for <500px */}
+<p className="text-end leading-snug max-[499px]:block hidden py-2 ">
+  Balance your meals, stay hydrated,<br />
+  make choices that fuel your lifestyle.
+</p>
+
+{/* Full version: for ≥500px */}
+<p className="text-end leading-snug min-[500px]:block hidden py-2">
+Learn how to balance your meals, stay hydrated, <br />
+and make choices that fuel your lifestyle
+</p>
+
+<button >BOOK NOW</button>
+
+</div>
   );
 };
 
