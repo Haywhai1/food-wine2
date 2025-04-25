@@ -10,7 +10,7 @@ const HealthyChoice = () => {
     backgroundPosition: "center",
   }}
 >
-  <h3 className='text-end '>Healthy Choices,<br/>Happy You!</h3>
+  <h3 className='text-end leading-7 sm:leading-10 '>Healthy Choices,<br/>Happy You!</h3>
 {/* Short version: only for <500px */}
 <p className="text-end leading-snug max-[499px]:block hidden py-2 ">
   Balance your meals, stay hydrated,<br />
