@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Hero from "../homelayout/hero";
 import { apiClient } from "../../shared/client";
 import { FaShoppingCart } from "react-icons/fa";
+import Footer from "../../components/footer";
 
 const Restaurant = () => {
   const [menu, setMenu] = useState([]);
@@ -105,6 +106,7 @@ const Restaurant = () => {
           </ul>
         )}
       </div>
+      <Footer />
     </>
   );
 };

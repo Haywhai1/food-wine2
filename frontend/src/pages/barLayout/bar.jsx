@@ -5,6 +5,7 @@ import Sky from './sky'
 import Exclusive from './exclusive'
 import Dj from './dj'
 import Mix from './mix'
+import Footer from '../../components/footer'
 
 const Bar = () => {
   return (
@@ -21,6 +22,7 @@ const Bar = () => {
       <Exclusive/>
       <Dj/>
       <Mix/>
+      <Footer />
     </div>
   )
 }
