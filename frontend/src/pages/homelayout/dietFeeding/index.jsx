@@ -3,7 +3,7 @@ import React from "react";
 const DietFeeding = () => {
   return (
     <div
-      className="p-5 py-10 md:p-20 flex flex-col items-start leading-none  text-white"
+      className="p-5 py-15 md:p-20 flex flex-col items-start leading-none  text-white"
       style={{
         backgroundImage: "url('/images/dietFeeding-img.png')",
         backgroundSize: "cover",
