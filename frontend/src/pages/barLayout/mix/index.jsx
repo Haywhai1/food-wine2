@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Mix = () => {
-  const paginationRef = useRef(null); // useRef to ensure DOM access
+  const paginationRef = useRef(null); 
 
   const items = [
     {
@@ -42,9 +42,9 @@ const Mix = () => {
   
 
   return (
-    <div className="p-5 md:p-20  md:py-10 md:text-center">
+    <div className="p-5 py-10 md:p-20  md:py-10 md:text-center">
       <h3 className="">Meet Our Mixologists</h3>
-      <p>
+      <p className="py-2">
         Meet the creative minds behind the bar and crafting cocktails that
         elevate every sip.
       </p>

@@ -6,7 +6,7 @@ const AccordionItem = ({ title, children }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-300 py-3">
+    <div className="border-b border-gray-300 py-5">
       <div
         onClick={() => setOpen(!open)}
         className="flex justify-between items-center w-full cursor-pointer"
@@ -24,7 +24,7 @@ const Footer = () => {
     <>
       {/* First Layer: Background Image & Input */}
       <div
-        className="p-5 py-15 md:p-20 flex flex-col items-center justify-center leading-none text-white"
+        className="p-5 py-20 md:p-20 flex flex-col items-center justify-center leading-none text-white"
         style={{
           backgroundImage: "url('/images/footer-img.png')",
           backgroundSize: "cover",
@@ -51,7 +51,7 @@ const Footer = () => {
       {/* md and above layout */}
       <div className="p-5 py-10 md:p-15 hidden md:flex flex-wrap justify-between gap-4">
         <div className="leading-8">
-          <p>Our Social Handles</p>
+          <p><b>Our Social Handles</b></p>
           <div className="flex space-x-4 mt-2">
             <div className="w-12 h-12 flex items-center justify-center bg-[#512D02] rounded-full">
               <FaTwitter className="text-white w-6 h-6" />
