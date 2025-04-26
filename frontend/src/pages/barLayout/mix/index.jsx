@@ -71,7 +71,7 @@ const Mix = () => {
             // Wait until ref is set to mount pagination
             setTimeout(() => {
               if (
-                swiper.params.pagination &&
+                swiper?.params?.pagination &&
                 typeof swiper.params.pagination === "object"
               ) {
                 swiper.params.pagination.el = paginationRef.current;
