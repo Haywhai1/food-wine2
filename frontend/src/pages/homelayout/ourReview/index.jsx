@@ -50,7 +50,7 @@ const CustomerReview = () => {
   ];
 
   return (
-    <div className="p-5 py-15 md:py-15 md:p-20">
+    <div className="p-5 pt-10 py-15 md:py-15 md:p-20">
       <h3 className="pb-2 md:text-center">What Our Customers Say</h3>
       <p className=" md:text-center">
       Real people, real experiences, rave reviews, see what our customers have
