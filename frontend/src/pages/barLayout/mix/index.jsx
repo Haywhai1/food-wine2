@@ -43,7 +43,7 @@ const Mix = () => {
 
   return (
     <div className="p-5 md:p-20  md:py-10 md:text-center">
-      <h3 className="text-2xl sm:text-3xl md:text-4xl">Meet Our Mixologists</h3>
+      <h3 className="">Meet Our Mixologists</h3>
       <p>
         Meet the creative minds behind the bar and crafting cocktails that
         elevate every sip.

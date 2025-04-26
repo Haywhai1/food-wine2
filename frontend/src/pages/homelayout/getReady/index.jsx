@@ -5,7 +5,7 @@ const GetReady = () => {
   const navigate = useNavigate();
   return (
     <div
-      className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 md:p-20"
+      className="max-w-8xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 p-5 py-10 md:p-20"
       style={{ fontFamily: '"Inter", sans-serif' }}
     >
       {/* Div 2 - Image */}

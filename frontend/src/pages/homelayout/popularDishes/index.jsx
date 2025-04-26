@@ -61,7 +61,7 @@ const PopularDishes = () => {
   return (
     <div className="bg-[#4d2c04] text-white md:text-center p-5 pb-10 md:pb-0 w-full">
       <h3>Our Popular Dishes</h3>
-      <p className="md:px-2">
+      <p className="md:px-2 pt-2">
         These are the crowd-pleasers, our signature dishes that keep guests
         coming back for more.
       </p>
