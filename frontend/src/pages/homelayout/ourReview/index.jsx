@@ -50,7 +50,7 @@ const CustomerReview = () => {
   ];
 
   return (
-    <div className="p-5 py-10 md:py-15 md:p-20">
+    <div className="p-5 py-20 md:py-15 md:p-20">
       <h3 className="pb-2 md:text-center">What Our Customers Say</h3>
       <p className=" md:text-center">
       Real people, real experiences, rave reviews, see what our customers have
@@ -92,7 +92,7 @@ const CustomerReview = () => {
         >
           {items.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col justify-between h-80 shadow-xl w-full p-6  rounded-xl overflow-hidden bg-[#FFF5E9] text-black text-center">
+              <div className="flex flex-col justify-between h-96 md:h-80 shadow-lg w-full p-6  rounded-lg overflow-hidden bg-[#FFF5E9] text-black text-center">
                 <p>{item.review}"</p>
                 <div>
                   <img
