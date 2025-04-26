@@ -80,7 +80,7 @@ const PopularDishes = () => {
             className="overflow-x-auto sm:overflow-visible scroll-smooth snap-x snap-mandatory"
             ref={scrollRef}
           >
-            <ul className="flex flex-nowrap sm:flex-wrap gap-6 md:gap-4 md:pt-10 pt-6 md:p-14 px-4 justify-start sm:justify-around md:justify-between">
+            <ul className="flex flex-nowrap sm:flex-wrap gap-4  md:pt-10 pt-6 md:p-14 px-4 justify-start sm:justify-around md:justify-between">
               {menu.slice(0, 4).map((menuItem, index) => (
                 <li
                   key={index}

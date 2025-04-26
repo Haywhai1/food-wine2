@@ -37,12 +37,20 @@ const Hero = ({
   }, []);
 
   return (
-    <div className={`w-full ${fullHeight ? "h-screen" : "min-h-[46vh] md:min-h-[52vh]"} relative`}>
-      <img
+    <div className={`w-full flex flex-col justify-between`}
+    style={{
+      minHeight: fullHeight ? "100vh" : "52vh",
+      backgroundImage: `url(${backgroundImage})`, // Ensure this is correctly formatted
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      // backgroundAttachment: "fixed", // Optional for parallax effect
+      color: "white",
+    }}>
+      {/* <img
         className="absolute top-0 left-0 h-full w-full object-cover"
         src={backgroundImage}
         alt="hero background"
-      />
+      /> */}
 
       <div className="w-full absolute top-0 h-full flex flex-col text-white">
         <div className="m-10 mt-15 ml-5 mr-5 md:mr-20 md:ml-20 items-center justify-between flex border-[0.8px] rounded-full">
