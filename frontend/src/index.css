@@ -62,8 +62,8 @@
   }
 
   .custom-swiper-pagination .swiper-pagination-bullet {
-    width: 32px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: gray; /* Tailwind orange-500 */
     opacity: 0.4;
     border-radius: 9999px;

@@ -11,19 +11,21 @@ const CustomerReview = () => {
       imageUrl: "/images/mix1.png",
       name: "Daniel Ogenne",
       review:
-        "The place is really nice and cool. The atmosphere is very refreshing and i love the way their staffs treat customers. You should really check them out, i promise you won’t regret it.",
+        "The place is really nice with a refreshing atmosphere. The staff are so welcoming — you should definitely check it out!",
       rating: 5.5,
     },
     {
       imageUrl: "/images/mix2.png",
       name: "Utman Bello",
-      review: "Entertaining and professional. Made our event unforgettable!",
+      review:
+        "Omg! Food and Wine is the best restaurant I’ve been to. I had an amazing experience with my friend — highly recommend!",
       rating: 4.5,
     },
     {
       imageUrl: "/images/mix3.png",
       name: "Helen Adeleke",
-      review: "Delicious cocktails and a great vibe all around.",
+      review:
+        "It’s always their bar section for me — great service, and I love that you can make a reservation without worrying about seating.",
       rating: 5.5,
     },
     {
@@ -50,16 +52,9 @@ const CustomerReview = () => {
   return (
     <div className="p-5 py-10 md:py-15 md:p-20">
       <h3 className="pb-2 md:text-center">What Our Customers Say</h3>
-
-      {/* Long version for medium and up */}
-      <p className="hidden md:block text-center">
-        Real people, real experiences, rave reviews, see what our customers have
-        to say about us!
-      </p>
-
-      {/* Short version for small screens */}
-      <p className="block md:hidden md:text-center">
-        Real people, real experiences — hear from them.
+      <p className=" md:text-center">
+      Real people, real experiences, rave reviews, see what our customers have
+      to say about us!
       </p>
 
       <div className="mt-5 ">
@@ -97,20 +92,50 @@ const CustomerReview = () => {
         >
           {items.map((item, index) => (
             <SwiperSlide key={index}>
-            <div className="flex flex-col justify-between h-72 w-full p-6 rounded-lg overflow-hidden bg-[#FFF5E9] text-black text-center">
-              <p className="text-sm italic">"{item.review}"</p>
-             <div>
-             <img
-                src={item.imageUrl}
-                alt={item.name}
-                className="w-8 h-8 rounded-full mx-auto my-3 object-cover"
-              />
-              <p className="text-yellow-500 ">{item.rating} ★</p>
-              <p><b>{item.name}</b></p>
-             </div>
-            </div>
-          </SwiperSlide>
-          
+              <div className="flex flex-col justify-between h-80 shadow-xl w-full p-6  rounded-xl overflow-hidden bg-[#FFF5E9] text-black text-center">
+                <p>{item.review}"</p>
+                <div>
+                  <img
+                    src={item.imageUrl}
+                    alt={item.name}
+                    className="w-9 h-8 rounded-full mx-auto my-3 object-cover"
+                  />
+                  <div className="flex items-center justify-center gap-1 my-2">
+                    {/* Filled stars */}
+                    {[...Array(Math.floor(item.rating - 0.5))].map((_, i) => (
+                      <svg
+                        key={`filled-${i}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-4 h-4"
+                        fill="#ff8f08"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 .587l3.668 7.571 8.332 1.151-6.064 5.852 1.48 8.306L12 18.896l-7.416 4.571 1.48-8.306L0 9.309l8.332-1.151z" />
+                      </svg>
+                    ))}
+
+                    {/* Ash stars to complete 5 */}
+                    {[...Array(5 - Math.floor(item.rating - 0.5))].map(
+                      (_, i) => (
+                        <svg
+                          key={`empty-${i}`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-4 h-4"
+                          fill="#d1d5db" // Tailwind's gray-300
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 .587l3.668 7.571 8.332 1.151-6.064 5.852 1.48 8.306L12 18.896l-7.416 4.571 1.48-8.306L0 9.309l8.332-1.151z" />
+                        </svg>
+                      )
+                    )}
+                    <span>{item.rating}</span>
+                  </div>
+                  <p>
+                    <b>{item.name}</b>
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
           ))}
         </Swiper>
 
