@@ -158,8 +158,8 @@ const Restaurant = () => {
                       </span> */}
 
                     <button className=" w-full bg-[#ff8f08] rounded-full flex items-center justify-center gap-1.5 sm:gap-2">
-                      <span className="text-white">Order Now</span>
-                      <FaShoppingCart className="text-white text-xs" />
+                      <span className="text-white span2 sm:text-sm">Order Now</span>
+                      <FaShoppingCart className="text-white span2 sm:text-sm" />
                     </button>
                   </div>
                 </div>
