@@ -157,9 +157,9 @@ const Restaurant = () => {
                         ₦{prod.price}
                       </span> */}
 
-                    <button className=" w-full md:px- py-1 bg-[#ff8f08] rounded-full flex items-center justify-center gap-1.5 sm:gap-2">
+                    <button className=" w-full bg-[#ff8f08] rounded-full flex items-center justify-center gap-1.5 sm:gap-2">
                       <span className="text-white">Order Now</span>
-                      <FaShoppingCart className="text-white text-xl" />
+                      <FaShoppingCart className="text-white text-xs" />
                     </button>
                   </div>
                 </div>
